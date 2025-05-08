@@ -1,0 +1,4 @@
+[0/2000][0/35] D_loss: 9.5074 G_loss: 4.6004 T_loss: 14.1295 Wasserstein_dist: 1.6945 Step: 1
+[0/2000][3/35] D_loss: 1323.5788 G_loss: -245.0804 T_loss: -4.7967 Wasserstein_dist: 2.2799 Step: 4
+[0/2000][6/35] D_loss: 26707.6206 G_loss: 1301.5989 T_loss: -8.7535 Wasserstein_dist: 2.7507 Step: 7
+[0/2000][9/35] D_loss: 40825.4845 G_loss: -1971.5669 T_loss: -7.2125 Wasserstein_dist: 2.4832 Step: 10

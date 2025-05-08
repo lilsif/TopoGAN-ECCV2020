@@ -1,0 +1,282 @@
+{
+    "settings": {
+        "Basic": {
+            "branch_name": "release_test_20250506_192715",
+            "continue_model": false,
+            "model_step": 0,
+            "data_extension": "png",
+            "dataset": "custom"
+        },
+        "Path": {
+            "save_path": "C:\\TopoGAN-ECCV2020/Data/LOG",
+            "data_path": "C:\\TopoGAN-ECCV2020\\Data\\cremi\\64x64_downscaled_from_128_n350",
+            "pims_path": "C:\\TopoGAN-ECCV2020/Data/cremi/pims_64x64_downscaled_from_128_n350",
+            "pds_path": "C:\\TopoGAN-ECCV2020\\Data\\cremi\\pds_64x64_downscaled_from_128_n350"
+        },
+        "Monitor": {
+            "print_step": 3,
+            "save_step": 10
+        },
+        "GPU": {
+            "gpu_num": 1,
+            "gpu_enable": true,
+            "cudnn_benchmark": true
+        }
+    },
+    "general": {
+        "optimizer": "Adam",
+        "loss": "wgangp",
+        "reduction": "mean",
+        "learning_rate": 0.0002,
+        "beta1": 0.5,
+        "beta2": 0.999
+    },
+    "generator_arch": [
+        [
+            "input_dimensions",
+            [
+                128,
+                1,
+                1
+            ]
+        ],
+        [
+            "ConvT2d",
+            [
+                128,
+                512,
+                4,
+                1,
+                0,
+                false
+            ]
+        ],
+        [
+            "BN2d",
+            [
+                512
+            ]
+        ],
+        [
+            "Relu",
+            [
+                true
+            ]
+        ],
+        [
+            "ConvT2d",
+            [
+                512,
+                256,
+                4,
+                2,
+                1,
+                false
+            ]
+        ],
+        [
+            "BN2d",
+            [
+                256
+            ]
+        ],
+        [
+            "Relu",
+            [
+                true
+            ]
+        ],
+        [
+            "ConvT2d",
+            [
+                256,
+                128,
+                4,
+                2,
+                1,
+                false
+            ]
+        ],
+        [
+            "BN2d",
+            [
+                128
+            ]
+        ],
+        [
+            "Relu",
+            [
+                true
+            ]
+        ],
+        [
+            "ConvT2d",
+            [
+                128,
+                64,
+                4,
+                2,
+                1,
+                false
+            ]
+        ],
+        [
+            "BN2d",
+            [
+                64
+            ]
+        ],
+        [
+            "Relu",
+            [
+                true
+            ]
+        ],
+        [
+            "ConvT2d",
+            [
+                64,
+                1,
+                4,
+                2,
+                1,
+                false
+            ]
+        ],
+        [
+            "Tanh",
+            []
+        ]
+    ],
+    "discriminator_arch": [
+        [
+            "input_dimensions",
+            [
+                1,
+                64,
+                64
+            ]
+        ],
+        [
+            "Conv2d",
+            [
+                1,
+                64,
+                4,
+                2,
+                1,
+                false
+            ]
+        ],
+        [
+            "LeakyRelu",
+            [
+                0.2,
+                true
+            ]
+        ],
+        [
+            "Conv2d",
+            [
+                64,
+                128,
+                4,
+                2,
+                1,
+                false
+            ]
+        ],
+        [
+            "LeakyRelu",
+            [
+                0.2,
+                true
+            ]
+        ],
+        [
+            "Conv2d",
+            [
+                128,
+                256,
+                4,
+                2,
+                1,
+                false
+            ]
+        ],
+        [
+            "LeakyRelu",
+            [
+                0.2,
+                true
+            ]
+        ],
+        [
+            "Conv2d",
+            [
+                256,
+                512,
+                4,
+                2,
+                1,
+                false
+            ]
+        ],
+        [
+            "LeakyRelu",
+            [
+                0.2,
+                true
+            ]
+        ],
+        [
+            "Conv2d",
+            [
+                512,
+                1,
+                4,
+                1,
+                0,
+                false
+            ]
+        ]
+    ],
+    "data_params": {
+        "epochs": 2000,
+        "batch_size": 128,
+        "batch_workers": 0,
+        "shuffle": true,
+        "drop_last": true
+    },
+    "advanced_params": {
+        "wgangp": {
+            "N_CRITIC": 5,
+            "GP_WEIGHT": 10.0
+        },
+        "persimg": {
+            "spread": 1,
+            "pixels": [
+                64,
+                64
+            ]
+        },
+        "Topo_edge": {
+            "target_topo_dimension": 1,
+            "topology_loss_weight": 0.0005,
+            "use_blind_force": false,
+            "project_2_dim": 0,
+            "image_watershed": 0.0,
+            "target_topo_threshold": 0.0,
+            "number_of_pts_to_fix": 2,
+            "hole_test_kernel_radius": 5,
+            "hole_test_iteration": 1,
+            "hole_test_border_width": 2,
+            "hole_test_threshold": 2,
+            "detect_opposite_2pts": true,
+            "connect_2pts": true,
+            "segment_thickness": 4,
+            "pd_subset_rate": 0.1,
+            "shuffle_subset": true
+        }
+    }
+}

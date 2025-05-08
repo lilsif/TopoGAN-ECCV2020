@@ -1,0 +1,1 @@
+step,epoch,batch_idx,D_loss,G_loss,T_loss,Wasserstein_dist

@@ -1,0 +1,6 @@
+Data/cremi
+*.zip
+*.gz
+.vs/
+.ipynb_ckeckpoints/
+*.pth

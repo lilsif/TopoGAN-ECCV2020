@@ -1,0 +1,2 @@
+[0/2000][0/2] D_loss: 9.5147 G_loss: 3.5616 T_loss: 1735.1915 Wasserstein_dist: 1.8464 Step: 1
+[1/2000][1/2] D_loss: 5042.0984 G_loss: 757.1021 T_loss: -1152.3170 Wasserstein_dist: 2.4394 Step: 4

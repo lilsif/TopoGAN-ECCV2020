@@ -1,0 +1,16 @@
+cd C:\TopoGAN-ECCV2020
+set CVXOPT_SUITESPARSE_SRC_DIR=C:\TopoGAN-ECCV2020\SuiteSparse
+set CVXOPT_BLAS_LIB_DIR=C:\TopoGAN-ECCV2020\OpenBLAS\lib
+set CVXOPT_BLAS_LIB=libopenblas
+set CVXOPT_LAPACK_LIB=libopenblas
+set PATH=C:\TopoGAN-ECCV2020\OpenBLAS\bin;%PATH%
+set PATH=C:=C:\TopoGAN-ECCV2020\glpk-4.65\w64;%PATH%
+set PATH=C:=C:\TopoGAN-ECCV2020\glpk-4.65\src;%PATH%
+set CVXOPT_MSVC=1
+set BUILD_GLPK=1
+set CVXOPT_BUILD_GLPK=1
+set GLPK_LIB_DIR=C:\TopoGAN-ECCV2020\glpk-4.65\w64
+set GLPK_INC_DIR=C:\TopoGAN-ECCV2020\glpk-4.65\src
+cmd
+.\venv37\Scripts\activate
+cd cvxopt

@@ -1,0 +1,10 @@
+[0/2000][0/2] D_loss: 9.5272 G_loss: 4.7378 T_loss: 180.8940 Wasserstein_dist: 1.8193 Step: 1
+[1/2000][1/2] D_loss: 203.4241 G_loss: 3472.5061 T_loss: -115.0172 Wasserstein_dist: 2.4849 Step: 4
+[3/2000][0/2] D_loss: 108813.0025 G_loss: -137.7522 T_loss: -159.9578 Wasserstein_dist: 2.4321 Step: 7
+[4/2000][1/2] D_loss: 18132.5806 G_loss: -989.6539 T_loss: -176.5312 Wasserstein_dist: 2.4920 Step: 10
+[6/2000][0/2] D_loss: 29779.6234 G_loss: 4610.6523 T_loss: -178.4736 Wasserstein_dist: 2.4953 Step: 13
+[7/2000][1/2] D_loss: 222780.5921 G_loss: -276.3139 T_loss: -177.8237 Wasserstein_dist: 2.5434 Step: 16
+[9/2000][0/2] D_loss: 268570.3576 G_loss: 6971.8716 T_loss: -131.9966 Wasserstein_dist: 2.4796 Step: 19
+[10/2000][1/2] D_loss: 6327597.5677 G_loss: -7479.0769 T_loss: 3.0116 Wasserstein_dist: 2.4659 Step: 22
+[12/2000][0/2] D_loss: 395859620.0208 G_loss: 80812.4873 T_loss: -45.2851 Wasserstein_dist: 2.4403 Step: 25
+[13/2000][1/2] D_loss: 450720317.3333 G_loss: 105948.6745 T_loss: -73.4776 Wasserstein_dist: 2.4675 Step: 28

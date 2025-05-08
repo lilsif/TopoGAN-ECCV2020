@@ -1,0 +1,7 @@
+[0/128][0/35] D_loss: 9.5068 G_loss: 4.6697 T_loss: 12.9222 Wasserstein_dist: 2.5455 Step: 1
+[0/128][3/35] D_loss: 362.4442 G_loss: 560.6463 T_loss: 0.6599 Wasserstein_dist: 3.0773 Step: 4
+[0/128][6/35] D_loss: 33232.9698 G_loss: 327.5191 T_loss: 11.0730 Wasserstein_dist: 2.3037 Step: 7
+[0/128][9/35] D_loss: 562867.1230 G_loss: 1840.8874 T_loss: 11.6005 Wasserstein_dist: 2.0533 Step: 10
+[0/128][12/35] D_loss: 1181188.9232 G_loss: 141.2477 T_loss: 10.8951 Wasserstein_dist: 2.8649 Step: 13
+[0/128][15/35] D_loss: 8764.7278 G_loss: -100.6988 T_loss: 9.7996 Wasserstein_dist: 2.9230 Step: 16
+[0/128][18/35] D_loss: 2344.5101 G_loss: -2.1423 T_loss: 9.0966 Wasserstein_dist: 2.6575 Step: 19

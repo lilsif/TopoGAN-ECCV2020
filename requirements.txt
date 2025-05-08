@@ -1,0 +1,13 @@
+argparse
+pathlib
+opencv-python
+numpy
+torch
+scipy
+pillow
+torchvision
+matplotlib
+scikit-image
+pot
+persim
+pandas

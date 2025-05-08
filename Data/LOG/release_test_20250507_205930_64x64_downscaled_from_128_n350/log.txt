@@ -1,0 +1,1 @@
+[0/1000][0/5] D_loss: 9.5042 G_loss: 0.0532 T_loss: 182.1183 Wasserstein_dist: 1.9442 Step: 1
