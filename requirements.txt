@@ -2,7 +2,6 @@ argparse
 pathlib
 opencv-python
 numpy
-torch
 scipy
 pillow
 torchvision
@@ -11,3 +10,4 @@ scikit-image
 pot
 persim
 pandas
+tqdm
