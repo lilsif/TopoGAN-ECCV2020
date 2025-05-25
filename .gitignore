@@ -4,3 +4,4 @@ Data/cremi
 .vs/
 .ipynb_ckeckpoints/
 *.pth
+persis_lib_cpp/
